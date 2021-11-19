@@ -1,5 +1,6 @@
 # enetproxy
 A Modified &amp; Fixed Enet proxy (Source by ama6nen) for Private Servers
+Owner of source : https://github.com/ama6nen
 
 # Modified Features
 - Fixed Cannot join private servers because of Real Growtopia peer check.
