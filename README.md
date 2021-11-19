@@ -8,8 +8,8 @@ A Modified &amp; Fixed Enet proxy (Source by ama6nen) for Private Servers
 - lagspike for some servers without packet limit check
 - In-Game packet tracing
 - To send an action use the following command /action <action> .
-# NOTE: Replace "|" with "." and "\n" with " " for example:
-"/action action.dialog_return dialog_name.editsign text.proxy"
-and packet will be like:
-"action|dialog_return\ndialog_name|editsign\ntext|proxy"
 - /send command to send the saved action.
+# NOTE: Replace "|" with "." and "\n" with " " while setting up an action.
+-For Example : "/action action.dialog_return dialog_name.editsign text.proxy"
+- And packet will be like:
+- "action|dialog_return\ndialog_name|editsign\ntext|proxy"
