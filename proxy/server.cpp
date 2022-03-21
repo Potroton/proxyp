@@ -269,22 +269,7 @@ bool server::setup_client() {
 
 
 
-void server::request() {
-     ip = m_server.c_str();
-     hInternet = InternetOpenA("InetURL/1.0", std::string INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, 0);
-     hConnection = InternetConnectA(hInternet, ip, 80, " ", " ", std::string INTERNET_SERVICE_HTTP, 0, 0);
-     hData = HttpOpenRequestA(hConnection, "POST", "/growtopia/server_data.php", NULL, NULL, NULL, std::string INTERNET_FLAG_KEEP_CONNECTION, 0);
-     success = HttpSendRequestA(hData, NULL, 0, NULL, 0);
-    if (success) {
-        PRINTC("Bypassed Anti-Proxy.\n");
-    }
-    else {
-        PRINTC("Bypass Anti-Proxy Failed.\n");
-    }
-    InternetCloseHandle(hData);
-    InternetCloseHandle(hConnection);
-    InternetCloseHandle(hInternet);
-}
+
 
 void server::redirect_server(variantlist_t& varlist) {
     m_port = varlist[1].get_uint32();
