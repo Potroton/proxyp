@@ -309,7 +309,7 @@ bool server::connect() {
     ENetAddress address;
     enet_address_set_host(&address, m_server.c_str());
     address.port = m_port;
-    PRINTS("port is %d and server is %s\n", m_port, m_server.c_str();   
+    PRINTS("port is %d and server is %s\n", m_port, m_server.c_str());   
     if (!this->setup_client()) {
         PRINTS("Failed to setup client when trying to connect to server!\n");
         return false;
