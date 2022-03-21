@@ -17,7 +17,7 @@ inline void config() {
     std::ifstream config("config.json");
     if (!config.is_open()) {
         printf("failed to load config.json!\n");
-        Sleep(3000);
+        sleep(3000);
         exit(0);
     }
     json j;
