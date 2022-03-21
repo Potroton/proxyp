@@ -22,7 +22,7 @@ int main() {
 	std::ifstream configs("config.json");
 	if (!configs.is_open()) {
 		printf("failed to load config.json!\n");
-		Sleep(3000);
+		leep(3000);
 		exit(0);
 	}
 	json js;
