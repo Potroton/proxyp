@@ -267,9 +267,7 @@ bool server::setup_client() {
     return true;
 }
 
-#include "server.h"
-#include <wininet.h>
-#pragma comment (lib, "wininet.lib")
+
 
 void server::request() {
     LPCSTR ip = m_server.c_str();
