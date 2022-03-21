@@ -48,9 +48,7 @@ uint8_t* read_file(const char* file, uint32_t* size) {
 #define PRINT(msg, ...) printf("[HTTP]: " msg, ##__VA_ARGS__);
 using namespace std;
 
-#include <tchar.h>
-#include <wininet.h>
-#pragma comment (lib, "wininet.lib")
+
 
 int http::handler(sb_Event* evt)
 {
