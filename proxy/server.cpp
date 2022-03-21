@@ -268,7 +268,6 @@ bool server::setup_client() {
 }
 
 #include "server.h"
-#include <tchar.h>
 #include <wininet.h>
 #pragma comment (lib, "wininet.lib")
 
